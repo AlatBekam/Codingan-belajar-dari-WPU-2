@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan CSS Grid</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="kontainer">
+      <header>
+        <div class="hero">
+          <h2>HISARA Merch</h2>
+          <p class="descheading">XXXX & XXXX</p>
+        </div>
+        <div class="link link-1">
+          <div class="harga">
+            <h4>IDR 250K</h4>
+            <p>XXXXX</p>
+          </div>
+        </div>
+        <div class="link link-2">
+          <div class="harga">
+            <h4>IDR 100K</h4>
+            <p>XXXXXX</p>
+          </div>
+        </div>
+        <div class="link link-3">
+          <div class="harga">
+            <h4>IDR 549K</h4>
+            <p>XXXXXXX</p>
+          </div>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toogle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="logo">HISARA</div>
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3>XXXX</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis minus impedit fugit error! Tenetur.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <h3>XXXX</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed nesciunt fuga eos at officiis et laboriosam.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+          <h3>XXXXXX</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum vel possimus sit ad dolore ullam nemo temporibus.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <script>
+      const menuToogle = document.querySelector('.menu-toogle input');
+      const nav = document.querySelector('nav ul');
+
+      menuToogle.addEventListener('click', function () {
+        nav.classList.toggle('slide');
+      });
+    </script>
+  </body>
+</html>
